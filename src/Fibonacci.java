@@ -24,7 +24,6 @@ class Fibo
         }
     }
 
-
 }
 
 public class Fibonacci
