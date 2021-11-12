@@ -1,5 +1,3 @@
-// A O(n) solution for finding rank of string
-
 import java.util.Scanner;
 
 class loxographicrank
