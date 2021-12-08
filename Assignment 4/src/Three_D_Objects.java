@@ -106,14 +106,14 @@ public class Three_D_Objects
         int option;
         while (true)
         {
-            System.out.println("1.Box\n2.Cube\n3.Cone\n4.Cylinder\n5.Exit\n\tOption : ");
+            System.out.println("\n1.Box\n2.Cube\n3.Cone\n4.Cylinder\n5.Exit\n\tOption : ");
             option = sc.nextInt();
             switch (option)
             {
                 case 1:
                 {
                     Box box_obj = new Box();
-                    System.out.println("1.Box Surface Area\n2.Box Volume\n\t Option : ");
+                    System.out.println("\n1.Box Surface Area\n2.Box Volume\n\t Option : ");
                     int sub_option = sc.nextInt();
                     switch(sub_option)
                     {
@@ -158,6 +158,7 @@ public class Three_D_Objects
                     }
                     break;
                 }
+                case 5: {break;}
             }
         }
     }
