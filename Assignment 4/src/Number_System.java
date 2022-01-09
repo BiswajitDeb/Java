@@ -2,17 +2,14 @@ import java.util.*;
 class Num
 {
     protected int num;
-    void shownum()
-    {
-        System.out.println("The number is = "+this.num);
-    }
+
 }
 class Hexnum extends Num
 {
     Scanner sc = new Scanner(System.in);
     Hexnum()
     {
-        System.out.println("Enter the number =");
+        System.out.println("Enter a number : ");
         this.num = sc.nextInt();
     }
     void Hexcon()
@@ -45,8 +42,8 @@ public class Number_System
     public static void main(String[] args)
     {
         Num ob = new Num();
-        ob.shownum();
         Hexnum obj = new Hexnum();
+
         obj.Hexcon();
     }
 }
