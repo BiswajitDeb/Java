@@ -2,7 +2,7 @@ public class random_numbers {
     boolean odd;
     int count = 1;
     int MAX = 20;
-    public void printOdd() {
+    public void Display_Odd() {
         synchronized (this) {
             while (count < MAX) {
                 System.out.println("Checking odd loop");
@@ -22,7 +22,7 @@ public class random_numbers {
             }
         }
     }
-    public void printEven() {
+    public void Display_Even() {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e1) {
@@ -49,18 +49,18 @@ public class random_numbers {
         }
     }
     public static void main(String[] args) {
-        random_numbers oep = new random_numbers();
-        oep.odd = true;
+        random_numbers Obj = new random_numbers();
+        Obj.odd = true;
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                oep.printEven();
+                Obj.Display_Even();
             }
         });
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                oep.printOdd();
+                Obj.Display_Odd();
             }
 
         });
